@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+// Mixins
+@import 'mixins/font-kerning';
+@import 'mixins/font-smoothing';
+@import 'mixins/media-query';
+
+// Variables
+@import 'variables';
+
+// Normalize
+@import 'normalize';
+
+body {
+  line-height: 24px;
+  text-align: center;
+
+  color: #fff;
+  font-family: Vollkorn, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+
+  background-color: $dark-blue;
+  
+  @include font-smoothing(antialiased);
+  @include font-kerning();
+}
+
+// Features
+@import 'header';
+@import 'banner';
+@import 'section';
+@import 'typography';
+
+

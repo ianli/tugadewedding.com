@@ -1,0 +1,17 @@
+// Font kerning
+//
+// References:
+// - https://gist.github.com/andrewjamesford/9545321
+// - http://www.elliotjaystocks.com/blog/kerning/
+
+@mixin font-kerning() {
+  text-rendering: optimizeLegibility;
+
+  -webkit-font-feature-settings: "kern";
+     -moz-font-feature-settings: "kern";
+     -moz-font-feature-settings: "kern=1";
+      -ms-font-feature-settings: "kern";
+          font-feature-settings: "kern";
+
+  font-kerning: normal;
+}

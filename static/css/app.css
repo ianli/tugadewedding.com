@@ -1,0 +1,348 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0; }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block; }
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline; }
+
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+[hidden],
+template {
+  display: none; }
+
+a {
+  background-color: transparent; }
+
+a:active,
+a:hover {
+  outline: 0; }
+
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn {
+  font-style: italic; }
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+mark {
+  background: #ff0;
+  color: #000; }
+
+small {
+  font-size: 80%; }
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+img {
+  border: 0; }
+
+svg:not(:root) {
+  overflow: hidden; }
+
+figure {
+  margin: 1em 40px; }
+
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+pre {
+  overflow: auto; }
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0; }
+
+button {
+  overflow: visible; }
+
+button,
+select {
+  text-transform: none; }
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer; }
+
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+input {
+  line-height: normal; }
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0; }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+  box-sizing: content-box; }
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+legend {
+  border: 0;
+  padding: 0; }
+
+textarea {
+  overflow: auto; }
+
+optgroup {
+  font-weight: bold; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+body {
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  font-family: Vollkorn, 'Times New Roman', Times, serif;
+  font-size: 16px;
+  letter-spacing: 0.2em;
+  background-color: #152757;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern";
+  -moz-font-feature-settings: "kern=1";
+  -ms-font-feature-settings: "kern";
+  font-feature-settings: "kern";
+  font-kerning: normal; }
+
+.app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 24px 16px 32px;
+  background-color: #152757;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15); }
+  .app-header .app-header__logo {
+    margin: -3px 0 -5px;
+    line-height: 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }
+  .app-header .app-header__line {
+    position: absolute;
+    left: 50%;
+    bottom: 12px;
+    margin-left: -24px;
+    width: 48px;
+    height: 4px;
+    background-color: #f8bbd0; }
+
+.app-banner {
+  margin: 68px auto 0;
+  width: 100%;
+  height: 240px;
+  background-color: #000;
+  background-image: url(/static/images/cc-square.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .app-banner {
+      height: 360px; } }
+  @media (min-width: 992px) {
+    .app-banner {
+      height: 480px; } }
+  @media (min-width: 1200px) {
+    .app-banner {
+      height: 640px; } }
+
+.app-section {
+  padding: 32px 16px; }
+  @media (min-width: 992px) {
+    .app-section {
+      padding: 48px 16px; } }
+  .app-section.app-section--dark-blue {
+    background-color: #152757; }
+  .app-section.app-section--light-blue {
+    background-color: #728FA6; }
+  .app-section.app-section--white {
+    background-color: #EEEEEE;
+    color: #152757; }
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase; }
+
+h1 {
+  margin: -4px 0 -8px;
+  font-size: 20px;
+  line-height: 32px; }
+  @media (min-width: 768px) {
+    h1 {
+      line-height: 40px;
+      font-size: 28px; } }
+
+h2 {
+  margin: -4px 0 -8px;
+  font-size: 16px;
+  line-height: 24px; }
+  @media (min-width: 768px) {
+    h2 {
+      line-height: 32px;
+      font-size: 24px; } }
+
+h3 {
+  margin: -6px 0 -6px;
+  font-size: 14px;
+  line-height: 20px; }
+
+.space-xs,
+.space-sm,
+.space-md,
+.space-lg,
+.space-xl {
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  pointer-events: none; }
+
+.space-xs {
+  height: 4px; }
+
+.space-sm {
+  height: 8px; }
+
+.space-md {
+  height: 16px; }
+
+.space-lg {
+  height: 32px; }
+
+.space-xl {
+  height: 64px; }
+
+.space-plus-xs {
+  margin-bottom: 4px; }
+
+.space-plus-sm {
+  margin-bottom: 8px; }
+
+.space-plus-md {
+  margin-bottom: 16px; }
+
+.space-plus-lg {
+  margin-bottom: 32px; }
+
+.space-plus-xl {
+  margin-bottom: 64px; }
+
+@media (min-width: 992px) {
+  .space-xs {
+    height: 12px; }
+  .space-sm {
+    height: 16px; }
+  .space-md {
+    height: 24px; }
+  .space-lg {
+    height: 40px; }
+  .space-xl {
+    height: 72px; }
+  .space-plus-xs {
+    margin-bottom: 12px; }
+  .space-plus-sm {
+    margin-bottom: 16px; }
+  .space-plus-md {
+    margin-bottom: 24px; }
+  .space-plus-lg {
+    margin-bottom: 40px; }
+  .space-plus-xl {
+    margin-bottom: 72px; } }
+
+.app-divider {
+  margin: 0 auto;
+  width: 48px;
+  height: 4px;
+  background-color: #f8bbd0;
+  pointer-events: none; }
