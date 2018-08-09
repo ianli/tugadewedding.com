@@ -32,6 +32,20 @@ h3 {
   line-height: 20px;
 }
 
+p {
+  margin: -4px auto -8px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  max-width: 75%;
+
+  @include media-sm-up() {
+    line-height: 28px;
+    font-size: 20px;
+    max-width: 50%;
+  }
+}
+
 .space-xs,
 .space-sm,
 .space-md,

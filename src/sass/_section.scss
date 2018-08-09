@@ -1,8 +1,8 @@
 .app-section {
-  padding: 32px 16px;
+  padding: 48px 16px;
 
   @include media-md-up() {
-    padding: 48px 16px;
+    padding: 60px 16px;
   }
 
   &.app-section--dark-blue {

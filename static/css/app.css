@@ -237,10 +237,10 @@ body {
       height: 640px; } }
 
 .app-section {
-  padding: 32px 16px; }
+  padding: 48px 16px; }
   @media (min-width: 992px) {
     .app-section {
-      padding: 48px 16px; } }
+      padding: 60px 16px; } }
   .app-section.app-section--dark-blue {
     background-color: #152757; }
   .app-section.app-section--light-blue {
@@ -276,6 +276,18 @@ h3 {
   margin: -6px 0 -6px;
   font-size: 14px;
   line-height: 20px; }
+
+p {
+  margin: -4px auto -8px;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1;
+  max-width: 75%; }
+  @media (min-width: 768px) {
+    p {
+      line-height: 28px;
+      font-size: 20px;
+      max-width: 50%; } }
 
 .space-xs,
 .space-sm,
